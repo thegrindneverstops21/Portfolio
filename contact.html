@@ -4,18 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Pfuxani Sam Junior Ndlovu</title>
-  
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  
   <nav>
-    <a href="index.html" class="logo">PSJ.</a>
+    <a href="index.html" class="logo">Pfuxani Sam Junior Ndlovu</a>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Me</a></li>
@@ -23,16 +24,13 @@
     </ul>
   </nav>
 
-  
   <div class="page-hero">
     <h1>Contact <span>Us.</span></h1>
     <p>Have a question or want to work together? Reach out below!</p>
   </div>
 
-  
   <section class="contact-wrapper">
 
-    
     <div class="contact-info">
       <h2 class="card-title">Get In Touch</h2>
       <div class="card-line"></div>
@@ -64,12 +62,11 @@
 
       <div class="contact-item">
         <span class="icon"><i class="fab fa-linkedin-in"></i></span>
-        <a href="https://linkedin.com/in/ndlovusamjunior21" target="_blank">
+        <a href="https://linkedin.com/in/sam-junior-10a13b319" target="_blank">
           linkedin.com/in/sam-junior-10a13b319
         </a>
       </div>
 
-    
       <div class="map-embed">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57494.61494768534!2d29.4189!3d-23.9045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6791289b948af%3A0x4a7f0b8b1f3e4f6b!2sPolokwane%2C%20Limpopo%2C%20South%20Africa!5e0!3m2!1sen!2sza"
@@ -80,7 +77,6 @@
       </div>
     </div>
 
-    
     <div class="card">
       <h2 class="card-title">Send a Message</h2>
       <div class="card-line"></div>
@@ -113,7 +109,7 @@
 
   </section>
 
-  <footer>
+  <footer class="footer">
     <div class="footer-address">
       <strong>Pfuxani Sam Junior Ndlovu</strong><br />
       27a Bok Street<br />
@@ -152,6 +148,13 @@
       }
       document.getElementById('form-msg').style.display = 'block';
     }
+
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
   </script>
 
 </body>
